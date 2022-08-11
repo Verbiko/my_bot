@@ -1,4 +1,4 @@
-from bs4 import BeautifulSoup as b #
+from bs4 import BeautifulSoup as b 
 import random
 import requests
 import telebot
@@ -13,7 +13,7 @@ r = requests.get(url) #получаем текст страницы
 #print(r.text)
 soup = b(r.text, 'html.parser') #применяем парсер
 #print(soup)
-anekdots = soup.find_all('div', class_='text') #получаем все дивы класса текст #'div.class_name h3'
+anekdots = soup.find_all('div', class_='text') #получаем все дивы класса текст
 #print(anekdots)
 clear_anekdots =[]
 for i in anekdots:
